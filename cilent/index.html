@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="./normalize.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./Simple-Crop/build/template-1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <script src="./Simple-Crop/build/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.3.1/intro.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="primary col-md-9">
+                <div class="wrapper col-md-2">
+                    <div class="group">
+                        <div class="buttonWrapper"><span class="button">CV</span></div>
+                        <span class="cvprocessing">CV-Processing</span>
+                    </div>
+                    <form action="http://127.0.0.1:5050/upload" method="post" enctype="multipart/form-data">
+                        <span style="position: relative;display: inline-block;overflow: hidden;">
+
+
+                            <div class="choosePictureWrapper btn btn-primary">
+                                <span class="choosePicture">Choose a picture</span>
+                            </div>
+                            <input type="file" name="the_file" id="inputFile" accept="image/*"
+                                style="position: absolute;right: 0; left: 50px; top: 40px;opacity: 0; -ms-filter: 'alpha(opacity=0)'; height: 70px; cursor: pointer;">
+                        </span>
+
+
+                        <div class="btn-group" role="group" aria-label="...">
+                            <div class="gameWrapper btn-default" onclick="CannyDetect()" style="cursor: pointer;">
+                                <img class="iconPhone" src="./images/img_0.png" /><span class="game"> 边缘检测</span>
+                            </div>
+                            <div class="group1 btn-default" onclick="ConnerDetect()" style="cursor: pointer;">
+                                <img class="iconPhone1" src="./images/img_1.png" /><span class="tag"> 角点检测</span>
+                            </div>
+                            <div class="group2 btn-default" onclick="ConnerDetect2()" style="cursor: pointer;">
+                                <img class="iconFile" src="./images/img_2.png" /><span class="label">Shi-Tomasi检测</span>
+                            </div>
+                            <div class="group3 btn-default" onclick="FaceDetect()" style="cursor: pointer;">
+                                <img class="iconUser" src="./images/img_3.png" /><span class="word"> 人脸检测</span>
+                            </div>
+                            <div class="group4 btn-default" onclick="SimilarityCompare()" style="cursor: pointer;">
+                                <img class="iconChat" src="./images/img_4.png" /><span class="tag1"> 相似度计算</span>
+                            </div>
+
+
+                            <div class="group5 btn-default" onclick="ShowSourced()" style="cursor: pointer;">
+                                <img class="iconSetting" src="./images/img_5.png" /><span class="settings"> 原图</span>
+                            </div>
+                        </div>
+                        <div class="group6">
+                            <span class="info">Upload to server</span>
+
+                            <span style="position: relative;display: inline-block;overflow: hidden;">
+                                <div class="downloadWrapper" style="margin-left: 15px;">
+                                    <span class="download">
+                                        Upload
+                                    </span>
+                                </div>
+                                <input type="submit" value="Upload" id="submitSource"
+                                    style="position: absolute; left: 10px; bottom: 1px; opacity: 0; -ms-filter: 'alpha(opacity=0)'; height: 60px; width: 160px;cursor: pointer;" />
+                            </span>
+
+                        </div>
+                    </form>
+                    <div class="group7">
+                        <img class="largeIcon" src="./images/img_6.png" />
+                        <div class="view">
+                            <img class="largeIcon1" src="./images/img_7.png" /><img class="iconLine"
+                                src="./images/img_8.png" /><img class="iconPiece" src="./images/img_9.png" /><img
+                                class="iconPiece1" src="./images/img_10.png" /><img class="iconPiece2"
+                                src="./images/img_11.png" />
+                        </div>
+                        <div class="view1">
+                            <div class="verticalLineCommon verticalLine"></div>
+                            <div class="verticalLineCommon verticalLine1"></div>
+                        </div>
+                        <div class="verticalLine2"></div>
+                        <img class="shopLogo" src="./images/img_12.png" />
+                    </div>
+
+
+
+                </div>
+
+                <!-- Middle Part -->
+                <div class="wrapper1 col-md-9 col-md-offset-1">
+                    <span class="processed">Processed</span>
+                    <img class="banner" src="./images/img_13.png" id="coreImg" />
+                </div>
+
+
+            </div>
+
+
+            <div class="side col-md-2">
+                <div class="wrapper2">
+                    <img class="iconAvatar" src="./images/img_14.png" /><span class="nickName">B19011722张凌豪</span><img
+                        class="iconDown" src="./images/img_15.png" />
+                </div>
+                <span class="label1">ID二维码</span><img class="item" src="./images/qrcode.png" />
+                <span class="upcomingTask">相似度计算
+                </span>
+                <div>
+
+
+                    <form action="http://127.0.0.1:5050/uploadTarget" method="post" enctype="multipart/form-data">
+
+                        <div class="wrapperItem0 btn">
+                            <div class="iconChatWrapper">
+                                <img class="iconChat1" src="./images/img_17.png" />
+                            </div>
+                            <span class="uiuxDiscussion">点击左侧选择按钮</span>
+                            <input type="file" name="the_file" id="inputFile2" accept="image/*"
+                                style="position: absolute;right: 0; top: 0;opacity: 0; -ms-filter: 'alpha(opacity=0)'; width: 220px; height: 55px;cursor: pointer;">
+                        </div>
+
+                        <div class="wrapperItem1 btn">
+                            <div class="iconBoxWrapper">
+                                <img class="iconBox" src="./images/img_18.png" />
+                            </div>
+                            <span class="animationAnimation">点击左侧上传按钮</span>
+                            <input type="submit" value="Upload" id="submitSource2"
+                                style="position: absolute;right: 0; top: 0;opacity: 0; -ms-filter: 'alpha(opacity=0)'; width: 220px; height: 55px; cursor: pointer;" />
+                        </div>
+                    </form>
+                </div>
+                <div class="wrapperItem2">
+                    <div class="mask">
+                        <span class="animationAnimation1">6666</span>
+                    </div>
+
+                </div>
+                <div class="wrapper3">
+                    <img class="entryPic" src="./images/img_19.png" />
+                    <span class="info1">Welcome to my homepage</span>
+                    <a href="https://zlhad.top">
+                        <img class="iconRefresh" src="./images/img_20.png" />
+                    </a>
+                </div>
+
+                <img class="picture" src="./images/img_21.png" />
+                <div class="overlayer"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

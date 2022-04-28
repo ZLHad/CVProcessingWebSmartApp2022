@@ -1,0 +1,220 @@
+@font-face {
+  font-family: DINCondensed-Bold;
+  src: url(./font/DIN_Condensed_Bold.ttf);
+}
+
+.crop-whole-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.crop-component {
+  width: 700px;
+  background: #ffffff;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 4px;
+  font-size: 0;
+  position: relative;
+}
+
+/* 标题 */
+.crop-component .crop-title {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #222222;
+  position: relative;
+}
+
+/* 画布 */
+.crop-component .crop-mask {
+  width: 100%;
+  height: 500px;
+  background-image: url(./img/mosaic-bk.jpg);
+  background-repeat: repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.crop-component .crop-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: move;
+}
+
+/* 旋转 */
+.crop-component .crop-rotate {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 474px;
+  width: 92%;
+  height: 66px;
+  margin: auto;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.64) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  mask-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.64) 50%,
+      rgba(255, 255, 255, 0) 100%);
+}
+
+.crop-component .crop-rotate .current {
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 9px solid #d8d8d8;
+  border-radius: 1px;
+}
+
+.crop-component .crop-rotate .lineation {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0;
+  margin: 0;
+  padding: 0 0 8px 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.crop-component .crop-rotate .lineation li {
+  flex: 1;
+  height: 100%;
+  display: inline-block;
+}
+
+.crop-component .crop-rotate .lineation .number {
+  width: 100%;
+  height: 32px;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  font-family: DINCondensed-Bold;
+  overflow: hidden;
+  color: #fff;
+}
+
+.crop-component .crop-rotate .lineation .bg {
+  width: 100%;
+  height: 18px;
+  background-image: url(./img/lineation-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* 功能按钮 */
+.crop-component .crop-btns {
+  width: 100%;
+  height: 90px;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 主轴对齐方式 */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /* 交叉轴对齐方式 */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.crop-component .crop-btns .crop-btn,
+.crop-component .crop-btns .crop-reset {
+  width: 160px;
+  height: 40px;
+  border: 1px solid #222222;
+  border-radius: 48px;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.crop-component .crop-btns .crop-reset {
+  background-color: #fff;
+  position: relative;
+}
+
+.crop-component .crop-btns .crop-reset:after {
+  content: "重置图片";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #222;
+  text-align: center;
+  line-height: 40px;
+}
+
+.crop-component .crop-btns .crop-btn {
+  position: relative;
+  background-color: #000;
+  margin-left: 36px;
+}
+
+.crop-component .crop-btns .crop-btn:after {
+  text-align: center;
+  color: #fff;
+  line-height: 40px;
+  font-size: 18px;
+  content: "确定裁剪";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.crop-component .crop-btns .crop-close {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 11px;
+  background-image: url(./img/crop-close.svg);
+  background-size: 100% 100%;
+  cursor: pointer;
+  border: none;
+  background-color:#fff;
+}

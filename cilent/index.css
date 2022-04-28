@@ -1,0 +1,674 @@
+.verticalLineCommon {
+    width: 2px;
+    height: 14px;
+    background-color: #bfc9ed;
+    border-radius: 8px;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5fb;
+}
+
+.primary {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 27px;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 1024px;
+    margin-right: 10px;
+    background-color: #ffffff;
+}
+
+.group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 41px;
+    margin-left: 52px;
+    white-space: nowrap;
+}
+
+
+
+.upload {
+    display: none;
+}
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding-left: 8px;
+    padding-right: 7px;
+    margin-right: 10px;
+    background-color: #5e81f4;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.button {
+    margin-top: -4px;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.cvprocessing {
+    margin-top: -4px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #5e81f4;
+    text-align: left;
+}
+
+.choosePictureWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding-left: 33px;
+    padding-right: 18px;
+    margin-top: 55px;
+    margin-left: 40px;
+    background-color: #5e81f4;
+    font-weight: 300;
+    line-height: 16px;
+    white-space: pre;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.choosePicture {
+    margin-top: 1px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.gameWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 72px;
+}
+
+.iconPhone {
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+}
+
+.game {
+    margin-top: -2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8da1b5;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.group1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 72px;
+}
+
+.iconPhone1 {
+    width: 20px;
+    height: 20px;
+    margin-right: 25px;
+}
+
+.tag {
+    margin-top: -2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8da1b5;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.group2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 49px;
+    margin-left: 73px;
+}
+
+.iconFile {
+    width: 22px;
+    height: 18px;
+    margin-right: 22px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8ca1b4;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.group3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 73px;
+}
+
+.iconUser {
+    width: 22px;
+    height: 20px;
+    margin-right: 22px;
+}
+
+.word {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8ca1b4;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.group4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 73px;
+}
+
+.iconChat {
+    width: 20px;
+    height: 17px;
+    margin-top: 3px;
+    margin-right: 24px;
+}
+
+.tag1 {
+    margin-top: -2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8ca1b4;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.group5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+    margin-left: 72px;
+}
+
+.iconSetting {
+    width: 22px;
+    height: 21px;
+    margin-right: 23px;
+}
+
+.settings {
+    margin-top: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #8ca1b4;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.group6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 192px;
+    height: 232px;
+    margin-top: 112px;
+    margin-left: 40px;
+    background-color: #f5f5fb;
+    border-radius: 12px;
+}
+
+.info {
+    position: relative;
+    display: -webkit-inline-box;
+    overflow: hidden;
+    width: 150px;
+    height: 55px;
+    margin-top: 90px;
+    margin-left: 29px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #778cad;
+    text-align: center;
+    white-space: normal;
+    text-overflow: ellipsis;
+    webkit-box-orient: vertical;
+    webkit-line-clamp: 2;
+}
+
+.downloadWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 144px;
+    height: 48px;
+    margin-top: 15px;
+    background-color: #5e81f4;
+    font-weight: 300;
+    line-height: 16px;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.download {
+    overflow: hidden;
+    max-width: 132px;
+    margin-top: -1px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.group7 {
+    position: absolute;
+    display: flex;
+    left: 95px;
+    top: 666px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85px;
+    height: 99px;
+    background-color: #ffffff;
+}
+
+.largeIcon {
+    position: absolute;
+    left: 0px;
+    bottom: 4px;
+    width: 63px;
+    height: 54px;
+}
+
+.view {
+    position: absolute;
+    display: flex;
+    left: 4px;
+    top: 15px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.largeIcon1 {
+    position: relative;
+    width: 62px;
+    height: 64px;
+}
+
+.iconLine {
+    position: absolute;
+    top: 0px;
+    right: -1px;
+    width: 13px;
+    height: 12px;
+}
+
+.iconPiece {
+    position: absolute;
+    top: 17px;
+    right: 7px;
+    width: 47px;
+    height: 1px;
+}
+
+.iconPiece1 {
+    position: absolute;
+    top: 24px;
+    right: 7px;
+    width: 47px;
+    height: 1px;
+}
+
+.iconPiece2 {
+    position: absolute;
+    left: 8px;
+    top: 31px;
+    width: 30px;
+    height: 1px;
+}
+
+.view1 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+    width: 17px;
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+.verticalLine {
+    margin-top: -3px;
+}
+
+.verticalLine1 {
+    margin-top: 3px;
+}
+
+.verticalLine2 {
+    position: relative;
+    width: 2px;
+    height: 14px;
+    margin-top: 2px;
+    margin-left: 83px;
+    background-color: #bfc9ed;
+    border-radius: 8px;
+}
+
+.shopLogo {
+    position: relative;
+    width: 85px;
+    height: 47px;
+    margin-top: 17px;
+    margin-left: -1px;
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 37px;
+}
+
+.processed {
+    position: relative;
+    overflow: hidden;
+    height: 34px;
+    max-width: 877px;
+    font-size: 28px;
+    font-weight: 300;
+    color: #011f3b;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.banner {
+    position: relative;
+    border-radius: 30px;
+    width: 100%;
+    height: 847px;
+    margin-top: 28px;
+}
+
+.side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: 1024px;
+    background-color: #ffffff;
+}
+
+.wrapper2 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 43px;
+    margin-left: 32px;
+}
+
+.iconAvatar {
+    width: 56px;
+    height: 56px;
+    margin-right: 8px;
+}
+
+.nickName {
+    margin-top: 17px;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #011f3b;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.iconDown {
+    width: 10px;
+    height: 4px;
+    margin-top: 33px;
+}
+
+.label1 {
+    position: relative;
+    overflow: hidden;
+    height: 24px;
+    max-width: 268px;
+    margin-top: 33px;
+    margin-left: 58px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #011f3b;
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item {
+    position: relative;
+    align-self: center;
+    width: 243px;
+    height: 265px;
+    margin-top: 21px;
+}
+
+.upcomingTask {
+    position: relative;
+    overflow: hidden;
+    height: 22px;
+    max-width: 264px;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #011f3b;
+    text-align: left;
+    white-space: pre;
+    text-overflow: ellipsis;
+}
+
+.wrapperItem0 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 31px;
+    margin-left: 60px;
+}
+
+.iconChatWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 19px;
+    background-color: #eef2fd;
+    border-radius: 6px;
+}
+
+.iconChat1 {
+    width: 20px;
+    height: 17px;
+    margin-top: -1px;
+}
+
+.uiuxDiscussion {
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #011f3b;
+    text-align: left;
+    white-space: pre;
+}
+
+.wrapperItem1 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 27px;
+    margin-left: 60px;
+}
+
+.iconBoxWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 19px;
+    background-color: #ffefd6;
+    border-radius: 6px;
+}
+
+.iconBox {
+    width: 22px;
+    height: 22px;
+}
+
+.animationAnimation {
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #011f3b;
+    text-align: left;
+    white-space: pre;
+}
+
+.wrapperItem2 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+.mask {
+    width: 248px;
+    height: 48px;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    margin-right: 1px;
+    background-color: #ffefd6;
+    border-radius: 6px;
+}
+
+.animationAnimation1 {
+    /* 居中 */
+
+
+
+    margin-top: 2px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #011f3b;
+    text-align: center;
+    white-space: pre;
+}
+
+.wrapper3 {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 27px;
+    margin-left: 69px;
+    background-color: #f5f5fb;
+    border-radius: 8px;
+}
+
+.entryPic {
+    position: relative;
+    width: 275px;
+    height: 204px;
+}
+
+.info1 {
+    position: absolute;
+    display: -webkit-inline-box;
+    left: 22px;
+    top: 21px;
+    overflow: hidden;
+    width: 102px;
+    height: 72px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #011f3b;
+    text-align: left;
+    white-space: normal;
+    text-overflow: ellipsis;
+    webkit-box-orient: vertical;
+    webkit-line-clamp: 3;
+}
+
+.iconRefresh {
+    position: absolute;
+    left: 38px;
+    top: 121px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.picture {
+    position: absolute;
+    right: 55px;
+    bottom: 63px;
+    width: 104px;
+    height: 161px;
+}
+
+.overlayer {
+    position: relative;
+    align-self: flex-end;
+    width: 98px;
+    height: 28px;
+    margin-right: 60px;
+    background-color: #ffffff;
+}
+
+
+.hot-list-container div {
+    /* 灰色背景圆角矩形 */
+    background-color: #f8f8f8b8;
+    border-radius: 4px;
+
+}
