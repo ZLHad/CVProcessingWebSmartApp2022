@@ -164,7 +164,6 @@ function ConnerDetect() {
         url: 'http://127.0.0.1:5050/HarrisDetect',
         type: 'POST',
         data: '',
-
         success: function (data) {
             console.log(data['file'])
             img = changeImg(data['file'], '#coreImg')
