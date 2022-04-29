@@ -1,8 +1,8 @@
 # 图像处理WEBAPP
 
-[前端部分](https://github.com/ZLHad/CVProcessingWebSmartApp2022/tree/main/cilent/README.md)
+[前端部分](https://github.com/ZLHad/CVProcessingWebSmartApp2022/blob/main/cilent/Readme.md)
 
-[后端部分](https://github.com/ZLHad/CVProcessingWebSmartApp2022/tree/main/server/README.md)
+[后端部分](https://github.com/ZLHad/CVProcessingWebSmartApp2022/blob/main/server/Readme.md)
 
 一个图像处理的web app，包括了server和cilent两端
 
