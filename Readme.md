@@ -11,25 +11,48 @@ cilent主要是原生JS开发，server是Python开发。
 项目结构：
 
 ├───cilent
+
 │   ├───images
+
 │   └───Simple-Crop
+
 │       ├───.vscode
+
 │       ├───build
+
 │       ├───docs
+
 │       ├───examples
+
 │       │   ├───dist
+
 │       │   ├───react
+
 │       │   ├───vue
+
 │       │   └───wechat
+
 │       │       └───pages
+
 │       │           ├───simple-crop
+
 │       │           └───test2
+
 │       │               └───img
+
 │       ├───font
+
 │       ├───img
+
 │       └───wechat
+
 └───server
-    ├───data
-    │   └───history
-    ├───face_detector
-    └───__pycache__
+
+​    ├───data
+
+​    │   └───history
+
+​    ├───face_detector
+
+​    └───__pycache__
+
